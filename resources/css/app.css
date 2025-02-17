@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Monda:wght@400..700&display=swap");
+@import url(https://fonts.bunny.net/css?family=bungee:400);
+
+@import "tailwindcss";
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+
+@theme {
+    --font-sans: "Monda", ui-sans-serif, system-ui, sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+        "Noto Color Emoji";
+    --font-title: "Bungee", sans-serif;
+    /* Colombia Blue (#C2D7ED) */
+
+    --color-sky: #b1e6ef;
+    --color-lavender: #d8b1ef;
+    --color-blush: #eeb9b1;
+    --color-mint: #c8eeb1;
+    --color-silver: #d3d4d3;
+    --color-charcoal: #4d565a;
+
+    --color-sky-100: #e6f8fb;
+    --color-sky-200: #cdeff6;
+    --color-sky-300: #b1e6ef;
+    --color-sky-400: #96dce8;
+    --color-sky-500: #7cd3e1;
+    --color-sky-600: #62c9da;
+    --color-sky-700: #48c0d3;
+    --color-sky-800: #2eb6cc;
+    --color-sky-900: #14adc5;
+    --color-sky-950: #0094ac;
+
+    --color-lavender-100: #f3e6fc;
+    --color-lavender-200: #e5ccf9;
+    --color-lavender-300: #d8b1ef;
+    --color-lavender-400: #c996ea;
+    --color-lavender-500: #ba7be4;
+    --color-lavender-600: #ac61de;
+    --color-lavender-700: #9d46d9;
+    --color-lavender-800: #8f2bd3;
+    --color-lavender-900: #810fcf;
+    --color-lavender-950: #6900b1;
+
+    --color-blush-100: #feebe8;
+    --color-blush-200: #fdd7d1;
+    --color-blush-300: #eeb9b1;
+    --color-blush-400: #e39f97;
+    --color-blush-500: #d8857e;
+    --color-blush-600: #cc6b65;
+    --color-blush-700: #c1514b;
+    --color-blush-800: #b53732;
+    --color-blush-900: #aa1d19;
+    --color-blush-950: #8d0803;
+
+    --color-mint-100: #f2fae9;
+    --color-mint-200: #e6f5d3;
+    --color-mint-300: #c8eeb1;
+    --color-mint-400: #ace899;
+    --color-mint-500: #90e180;
+    --color-mint-600: #74db68;
+    --color-mint-700: #58d44f;
+    --color-mint-800: #3ccd37;
+    --color-mint-900: #20c71f;
+    --color-mint-950: #0aa308;
+
+    --color-silver-100: #f6f6f6;
+    --color-silver-200: #ededed;
+    --color-silver-300: #d3d4d3;
+    --color-silver-400: #b9baba;
+    --color-silver-500: #9fa1a0;
+    --color-silver-600: #858786;
+    --color-silver-700: #6c6d6d;
+    --color-silver-800: #525454;
+    --color-silver-900: #393a3a;
+    --color-silver-950: #212121;
+
+    --color-charcoal-100: #d7dadb;
+    --color-charcoal-200: #bec3c5;
+    --color-charcoal-300: #a5acaf;
+    --color-charcoal-400: #8c9699;
+    --color-charcoal-500: #737f83;
+    --color-charcoal-600: #5a696d;
+    --color-charcoal-700: #414357;
+    --color-charcoal-800: #282e42;
+    --color-charcoal-900: #10192d;
+    --color-charcoal-950: #000417;
+}
+
+@plugin "@iconify/tailwind4";
+
+body {
+    @apply bg-neutral-950 text-white;
+}
+
+#action_button:has(.action_icon) {
+    @apply bg-black/20 rounded-sm cursor-pointer
+}
+
+.action_icon {
+    @apply block text-white size-6;
+}
